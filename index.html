@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja" class="keybind">
+  <head>
+    <meta charset="UTF-8">
+    <title>だれでもアドリブ弾けるくん</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <div id="content">
+    <menu>
+      <input checked id="c" type="radio" name="i"><label for="c">C</label>
+      <input id="d" type="radio" name="i"><label for="d">D</label>
+      <input id="e" type="radio" name="i"><label for="e">E</label>
+      <input id="f" type="radio" name="i"><label for="f">F</label>
+      <input id="g" type="radio" name="i"><label for="g">G</label>
+      <input id="a" type="radio" name="i"><label for="a">A</label>
+      <input id="b" type="radio" name="i"><label for="b">B</label>
+    </menu>  
+    <ul class="keyboard">
+      <li class="key disable" data-bind="S" data-note="B" data-octave="5"></li>
+      <li class="key primary" data-bind="D" data-note="c" data-octave="6"></li>
+      <li class="key disable" data-bind="R" data-note="c#" data-octave="6"></li>
+      <li class="key disable" data-bind="F" data-note="d" data-octave="6"></li>
+      <li class="key" data-bind="T" data-note="d#" data-octave="6"></li>
+      <li class="key disable" data-bind="G" data-note="e" data-octave="6"></li>
+      <li class="key" data-bind="H" data-note="f" data-octave="6"></li>
+      <li class="key" data-bind="U" data-note="f#" data-octave="6"></li>
+      <li class="key" data-bind="J" data-note="g" data-octave="6"></li>
+      <li class="key disable" data-bind="I" data-note="g#" data-octave="6"></li>
+      <li class="key disable" data-bind="K" data-note="a" data-octave="6"></li>
+      <li class="key" data-bind="O" data-note="a#" data-octave="6"></li>
+      <li class="key disable active" data-bind="L" data-note="b" data-octave="6"></li>
+      <li class="key" data-bind="º" data-note="C" data-octave="7"></li>
+    </ul>
+    <button id="play" class="button">PLAY</button>
+  </div>   
+  <!-- js -->
+  <script src='js/jquery.min.js'></script>
+  <script src="js/index.js"></script>  
+  </body>
+</html>
